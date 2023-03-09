@@ -19,16 +19,16 @@ const Carousel2 = () => {
     const handleArrowClick = (direction) => {
 
         if (direction === "r") {
-            if (display < arr.length-1) {
+            if (display < arr.length - 1) {
                 setDisplay(display += 1)
 
             } else { setDisplay(0) }
 
-        }else if (direction === "l") {
-            if (display >=1) {
+        } else if (direction === "l") {
+            if (display >= 1) {
                 setDisplay(display -= 1)
             } else {
-                setDisplay(arr.length-1)
+                setDisplay(arr.length - 1)
 
             }
         }
@@ -63,7 +63,7 @@ const Carousel2 = () => {
                     {
                         arr.map((item, index) => {
                             return (
-                                <div className='dot' key={index} style={{ backgroundColor: "red" }}></div>
+                                <div className='dot' key={index} style={index === display ? { backgroundColor: "white" } : { backgroundColor: "red " }}></div>
                             )
                         })
                     }
