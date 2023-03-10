@@ -3,37 +3,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: red;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 5px grey;
 }
 
 .main-slide {
     /* padding: 0 50px 0px 50px; */
 
-    margin: 20px;
+    margin: 0 4px;
     position: relative;
     background-color: green;
-    width: 90%;
-    height: 50vh;
+    /* width: 90%; */
+    /* width: 100%; */
+    height: 80%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .imgBox {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    /* height: 90%; */
-
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    /* outline: none; */
+    /* border: none; */
 }
 
 .imgBox img {
-    /* height: 100% */
+    /* margin: 5px; */
+    height: 70%;
     width: 100%;
-    transition: 5s;
+    /* transition: 5s; */
+    outline: none;
+
 }
 
 
@@ -41,18 +54,18 @@
 .dots {
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 5%;
 }
 
 .dot {
-    margin: 0 8px;
+    margin: 0 4px;
     /* background-color: rgba(255, 255, 255, 0.1); */
     background-color: white;
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    border: 3px solid white;
-    transition: 1s;
+    width: 3px;
+    height: 3px;
+    border: 1px solid white;
+    transition: 0.5s;
 }
 
 .arrow {
@@ -62,19 +75,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     top: 45%;
     cursor: pointer;
     opacity: 40%
 }
-.arrow:hover{
+
+.arrow:hover {
     opacity: 100%;
 }
 
 .arrows img {
-    height: 25px;
-    width: 25px;
+    height: 70%;
+    width: 70%;
 }
 
 
@@ -89,7 +103,11 @@
 }
 
 
-
+.tilte {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+}
 
 .desc {
     /* display: none; */

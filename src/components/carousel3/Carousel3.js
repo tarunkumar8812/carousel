@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './carousel2.css'
-const Carousel2 = () => {
+import './carousel3.css'
+const Carousel3 = () => {
 
 
     const arr = [
@@ -62,14 +62,14 @@ const Carousel2 = () => {
                     {
                         arr.map((item, index) => {
                             return (
-                                <div className='dot' key={index} style={index === display ? { backgroundColor: "white", width: "15px", borderRadius: "40%" } : { backgroundColor: "" }}></div>
+                                <div className='dot' key={index} style={index === display ? { backgroundColor: "white", width: "10px", borderRadius: "40%" } : { backgroundColor: "" }}></div>
                             )
                         })
                     }
                     {/* <div className='dot'></div>
                     <div className='dot'></div> */}
                 </div>
-                {/* <p className="legend">Legend 1</p> */}
+                <p className="tilte">{arr[display]?.name}-title</p>
             </div>
 
 
@@ -81,4 +81,4 @@ const Carousel2 = () => {
     )
 }
 
-export default Carousel2
+export default Carousel3
